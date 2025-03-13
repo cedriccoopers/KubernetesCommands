@@ -13,6 +13,8 @@
 
 ## YAML
 ### Create a POD using YAML based configuration
-> image: linux
-> version: 2
+```
+ image: linux
+ version: 2
+```
 
