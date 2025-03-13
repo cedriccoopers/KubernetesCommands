@@ -61,5 +61,43 @@ spec:
 ```
 kubectl apply -f pod.yaml
 ```
+## ReplicaSet
+```
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: myapp-replicaset
+  labels:
+    app: myapp
+spec:
+  selector:
+    matchLabels:
+      app: myapp
+  replicas: 3
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: myapp
+    spec:
+      containers:
+        - name: ngix
+          image: ngix
+```
+### To make sure the file is correc, execute
+```
+cat replicaSet.yaml
+```
+### To create the ReplicaSet, execute
+```
+kubectl create -f replicaSet.yaml
+```
+### To view the status of the ReplicaSet, execute
+```
+kubectl get replicaset
+```
+
+
+
 
 
