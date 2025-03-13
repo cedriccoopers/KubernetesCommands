@@ -35,4 +35,12 @@ kubectl get pods -o wide
 ```
 kubectl create -f "name-of-file.yaml"
 ```
+### To see the POD execute
+```
+kubectl get pods
+```
+### To describe the POD execute
+```
+kubectl describe pod myapp-pod
+```
 
