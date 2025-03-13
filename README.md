@@ -54,8 +54,8 @@ metadata:
     tier: frontend
 spec:
   containers:
-  -  name: cedric
-     image: nginx
+    - name: cedric
+      image: nginx
 ```
 ### To create the pod on the above yaml file execute
 ```
