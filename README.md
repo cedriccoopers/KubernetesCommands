@@ -43,4 +43,23 @@ kubectl get pods
 ```
 kubectl describe pod myapp-pod
 ```
+### pod.yaml
+```
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cedric
+  labels:
+    app: nginx
+    tier: frontend
+spec:
+  containers:
+  -  name: cedric
+     image: nginx
+```
+### To create the pod on the above yaml file execute
+```
+kubectl apply -f pod.yaml
+```
+
 
