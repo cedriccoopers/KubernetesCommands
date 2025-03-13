@@ -15,9 +15,10 @@
 ### Create a POD using YAML based configuration
 ### POD definition minimum fields
 ```
- apiVersion:
+ apiVersion: v1
  kind:
  metadata:
+   name:
  spec: 
 ```
 
