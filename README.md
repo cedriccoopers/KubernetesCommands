@@ -1,5 +1,5 @@
 # Get nodes and Deploy service
-## -kubectl get nodes
+### -kubectl get nodes
 ## -kubectl get deployments
 ## -kubectl expose deployment hello-minikube --type=NodePort --port=8080
 ## -kubectl delete services hello-minikube
@@ -10,4 +10,7 @@
 ## -kubectl get pods
 ## -kubectl describe pod nginx
 ## -kubectl get pods -o wide
+
+# YAML
+
 
