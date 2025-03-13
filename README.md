@@ -20,9 +20,19 @@ kubectl get pods -o wide
 ### POD definition minimum fields
 ```
  apiVersion: v1
- kind:
+ kind: POD / Service / ReplicaSet / Deployment
  metadata:
-   name:
- spec: 
+   name: myapp-pod
+   labels:
+      app: myapp
+      type: front-end
+ spec:
+  containers:
+      - name: nginx-container
+        image: nginx
+```
+### To execute the above file run
+```
+kubectl create -f "name-of-file.yaml"
 ```
 
