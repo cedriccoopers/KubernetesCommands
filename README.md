@@ -13,8 +13,11 @@
 
 ## YAML
 ### Create a POD using YAML based configuration
+### POD definition minimum fields
 ```
- image: linux
- version: 2
+ apiVersion:
+ kind:
+ metadata:
+ spec: 
 ```
 
