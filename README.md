@@ -15,7 +15,7 @@ kubectl describe pod nginx
 kubectl get pods -o wide
 ```
 
-**## YAML
+## YAML
 ### Create a POD using YAML based configuration
 ### POD definition minimum fields
 ```
