@@ -95,6 +95,17 @@ kubectl create -f replicaSet.yaml
 ### To view the status of the ReplicaSet, execute
 ```
 kubectl get replicaset
+kubectl get rs
+```
+## Deployments
+### Rolling Upgrades - Deploy one after another
+### Deployment is higher than Replica Set
+### Create a new Deployment
+#### Name: httpd-frontend
+#### Replicas: 3
+#### Image: httpd:2.4-alpine
+```
+kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3 
 ```
 
 
