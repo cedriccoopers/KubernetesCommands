@@ -107,6 +107,14 @@ kubectl get rs
 ```
 kubectl create deployment httpd-frontend --image=httpd:2.4-alpine --replicas=3 
 ```
+### Set Deployment image
+```
+kubectl set image deployment/myapp-deployment nginx=nginx:1.9.1
+```
+## Rollout
+```
+kubectl rollout status deployment/myapp-deployment
+```
 
 
 
